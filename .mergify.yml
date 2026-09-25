@@ -1,16 +1,2 @@
-queue_rules:
-  - name: vm5-merge-batch-head-freshness
-    queue_conditions: []
-    merge_conditions:
-      - check-success = VM5 Batch CI
-      - check-success = VM5 Gate B
-    batch_size: 2
-    batch_max_wait_time: 2 minutes
-    merge_method: merge-batch
-    merge_bot_account: livastic-vm5-primary-20260911
-pull_request_rules:
-  - name: vm5-autoqueue-merge-batch-head-freshness
-    conditions:
-      - title ~= ^VM5_MB_HEAD_
-    actions:
-      queue: {}
+extends: vm5-shared-trusted-260914
+pull_request_rules: []
