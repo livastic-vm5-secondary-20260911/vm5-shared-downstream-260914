@@ -2,4 +2,4 @@
 name = "vm5-uv-crossfile"
 version = "0.1.0"
 requires-python = ">=3.12"
-dependencies = ["idna==3.6", "six==1.16.0"]
+dependencies = ["idna==3.6", "six==1.17.0"]
