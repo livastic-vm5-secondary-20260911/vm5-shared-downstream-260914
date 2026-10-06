@@ -15,7 +15,7 @@
     {
       "id": "other",
       "owner": "BASE_OTHER",
-      "enabled": false
+      "enabled": true
     }
   ]
 }
