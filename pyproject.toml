@@ -2,4 +2,4 @@
 name = "vm5-uv-normalized-name"
 version = "0.0.0"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["typing_extensions==4.15.0"]
