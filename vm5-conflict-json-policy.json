@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "version": 1
+  },
+  "rules": [
+    {
+      "id": "shared",
+      "owner": "BASE_OWNER",
+      "padding_1": "UNCHANGED_1",
+      "padding_2": "UNCHANGED_2",
+      "padding_3": "UNCHANGED_3",
+      "padding_4": "UNCHANGED_4",
+      "enabled": false
+    },
+    {
+      "id": "other",
+      "owner": "BASE_OTHER",
+      "enabled": false
+    }
+  ]
+}
