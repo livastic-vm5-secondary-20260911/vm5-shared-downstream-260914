@@ -3,7 +3,23 @@ pull_request_rules: []
 merge_queue:
   status_comments: none
 
+conflict_resolvers:
+  - paths:
+      - uv.lock
+      - pyproject.toml
+    strategy: uv
+
 queue_rules:
+  - name: vm5-uv-crossfile-261007
+    batch_size: 2
+    batch_max_wait_time: 60s
+    checks_timeout: null
+    queue_conditions:
+      - base = vm5-uv-crossfile-base-261007
+    merge_conditions:
+      - check-success = vm5-never-check
+    merge_method: merge-batch
+
   - name: vm5-slack-future-materialization
     batch_size: 1
     checks_timeout: null
