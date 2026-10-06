@@ -4,10 +4,16 @@ merge_queue:
   status_comments: none
 
 queue_rules:
-  - name: vm5-slack-future-materialization
-    batch_size: 1
+  - name: vm5-crjson-structural-261006
+    batch_size: 2
+    batch_max_wait_time: 30s
     checks_timeout: null
-    queue_conditions: []
+    queue_conditions:
+      - base = vm5-crjson-base-261006
     merge_conditions:
       - check-success = vm5-never-check
-    merge_method: squash
+    merge_method: merge-batch
+    conflict_resolvers:
+      - paths:
+          - vm5-conflict-json-policy.json
+        strategy: json
