@@ -4,6 +4,14 @@ merge_queue:
   status_comments: none
 
 queue_rules:
+  - name: vm5-stacked-bypass-261007
+    batch_size: 1
+    checks_timeout: null
+    queue_conditions:
+      - base = vm5-stacked-bypass-base-261007
+    merge_conditions: []
+    merge_method: squash
+
   - name: vm5-slack-future-materialization
     batch_size: 1
     checks_timeout: null
