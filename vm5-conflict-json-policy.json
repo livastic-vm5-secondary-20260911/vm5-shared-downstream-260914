@@ -5,7 +5,7 @@
   "rules": [
     {
       "id": "shared",
-      "owner": "BASE_OWNER",
+      "owner": "PR_A_OWNER",
       "padding_1": "UNCHANGED_1",
       "padding_2": "UNCHANGED_2",
       "padding_3": "UNCHANGED_3",
