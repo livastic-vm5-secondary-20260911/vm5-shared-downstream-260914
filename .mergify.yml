@@ -3,22 +3,7 @@ pull_request_rules: []
 merge_queue:
   status_comments: none
 
-conflict_resolvers:
-  - paths:
-      - vm5-batchcomp-discard.txt
-    strategy: ours
-
 queue_rules:
-  - name: vm5-batchcomp-discard-261007
-    batch_size: 2
-    batch_max_wait_time: 30s
-    checks_timeout: null
-    queue_conditions:
-      - base = vm5-batchcomp-discard-base-261007
-    merge_conditions:
-      - check-success = vm5-never-check
-    merge_method: merge-batch
-
   - name: vm5-slack-future-materialization
     batch_size: 1
     checks_timeout: null
