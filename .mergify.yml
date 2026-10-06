@@ -4,14 +4,6 @@ merge_queue:
   status_comments: none
 
 queue_rules:
-  - name: vm5-nothing-landed-rebase-261006
-    batch_size: 1
-    checks_timeout: null
-    queue_conditions:
-      - base = vm5-nothing-landed-base-261006
-    merge_conditions: []
-    merge_method: rebase
-
   - name: vm5-slack-future-materialization
     batch_size: 1
     checks_timeout: null
