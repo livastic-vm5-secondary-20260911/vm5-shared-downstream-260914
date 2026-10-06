@@ -11,3 +11,11 @@ queue_rules:
     merge_conditions:
       - check-success = vm5-never-check
     merge_method: squash
+
+  - name: vm5-nothing-landed-rebase-261006
+    batch_size: 1
+    checks_timeout: null
+    queue_conditions:
+      - base = vm5-nothing-landed-base-261006
+    merge_conditions: []
+    merge_method: rebase
