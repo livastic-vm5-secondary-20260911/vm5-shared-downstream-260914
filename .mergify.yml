@@ -4,19 +4,6 @@ merge_queue:
   status_comments: none
 
 queue_rules:
-  - name: vm5-json-negzero-261006
-    batch_size: 2
-    checks_timeout: null
-    queue_conditions:
-      - base = vm5-json-negzero-base-261006
-    merge_conditions:
-      - check-success = vm5-never-check
-    merge_method: merge-batch
-    conflict_resolvers:
-      - paths:
-          - vm5-json-negzero.json
-        strategy: json
-
   - name: vm5-slack-future-materialization
     batch_size: 1
     checks_timeout: null
