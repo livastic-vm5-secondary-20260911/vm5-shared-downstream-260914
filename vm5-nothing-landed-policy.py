@@ -16,7 +16,7 @@ policies = [
         "pad2": 2,
         "pad3": 3,
         "pad4": 4,
-        "mode": "allow",
+        "mode": "deny",
         "pad5": 5,
         "pad6": 6,
         "pad7": 7,
